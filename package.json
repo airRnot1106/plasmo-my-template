@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
-    "test": "plasmo test",
+    "test": "vitest",
     "lint": "biome check --apply ./src",
     "format": "biome format --write ./src"
   },
@@ -18,13 +18,20 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
     "@tsconfig/strictest": "^2.0.2",
     "@types/chrome": "0.0.251",
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
+    "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^23.0.1",
     "typescript": "5.2.2",
-    "vite": "^5.0.7"
+    "vite": "^5.0.7",
+    "vite-tsconfig-paths": "^4.2.2",
+    "vitest": "^1.0.4",
+    "vitest-chrome": "^0.1.0"
   },
   "manifest": {
     "host_permissions": [
